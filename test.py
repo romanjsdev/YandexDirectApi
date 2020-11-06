@@ -50,7 +50,7 @@ else:
 #Новый второй заголовок
 title2 = "Lorem ipsum"
 
-#Изменяем второй заголовок в оъявлениях
+#Изменяем второй заголовок в объявлениях
 for adID in adsId:
 	updateAds = {
   					"method": "update",
