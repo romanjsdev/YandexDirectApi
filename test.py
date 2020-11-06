@@ -38,7 +38,7 @@ getAds = {"method": "get",
 getAds = json.dumps(getAds)
 result = requests.post(adsURL, getAds, headers=headers)
 
-#Создаем массив с Id всех актиных объявлений
+#Создаем массив с Id всех активных объявлений
 adsId = []
 if result.json()["result"]!={}:
 	for res in result.json()["result"]["Ads"]:
