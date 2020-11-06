@@ -20,9 +20,8 @@ getCapm = {"method": "get",
 
 getCapm = json.dumps(getCapm)
 
-campaigns = []
-
 #Получаем Id всех компаний 
+campaigns = []
 res = requests.post(campURL, getCapm, headers=headers)
 for camp in res.json()["result"]["Campaigns"]:
 	campaigns.append(camp["Id"])
